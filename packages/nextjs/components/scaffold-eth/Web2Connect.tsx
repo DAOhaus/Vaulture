@@ -1,7 +1,7 @@
 "use client";
 
 import { createThirdwebClient } from "thirdweb";
-import { sepolia } from "thirdweb/chains";
+import { base } from "thirdweb/chains";
 import { ConnectButton, PayEmbed } from "thirdweb/react";
 import { createWallet, inAppWallet } from "thirdweb/wallets";
 
@@ -26,7 +26,7 @@ export const Web2Connect = () => {
         client={client}
         wallets={wallets}
         accountAbstraction={{
-          chain: sepolia,
+          chain: base,
           // factoryAddress: "YOUR_FACTORY_ADDRESS",
           gasless: true,
         }}
